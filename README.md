@@ -1,4 +1,3 @@
-![](http://i.imgur.com/xeKD93p.png)
 # `$ robox-wifi-configuration` [![Release 1.0](https://img.shields.io/badge/Release-1.4.0-green.svg)](https://github.com/billz/raspap-webgui/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) 
 
 RoBox Wifi Configuration -- Forked from raspap-webgui
