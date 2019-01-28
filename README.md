@@ -1,7 +1,7 @@
 # `$ robox-wifi-configuration`
 RoBox Wifi Configuration -- Forked from raspap-webgui
 
-This project was forked from raspap-webgui. I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose, however, I need to customize the UI so that my users can easily understand the web page presented.
+This project was forked from raspap-webgui. I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose. However, I need to customize the UI so that my users can easily understand the web page presented.
 
 ## Contents
 
