@@ -1,14 +1,8 @@
-# `$ robox-wifi-configuration` [![Release 1.0](https://img.shields.io/badge/Release-1.4.0-green.svg)](https://github.com/billz/raspap-webgui/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) 
-
+# `$ robox-wifi-configuration`
 RoBox Wifi Configuration -- Forked from raspap-webgui
 
 This project was forked from raspap-webgui. I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose, however, I need to customize the UI so that my users can easily understand the web page presented.
 
-![](https://i.imgur.com/5E3SnEW.png)
-![](https://i.imgur.com/jFDMEy6.png)
-![](https://i.imgur.com/ck0XS8P.png)
-![](https://i.imgur.com/Vaej8Xv.png)
-![](https://i.imgur.com/iNuMMip.png)
 ## Contents
 
  - [Prerequisites](#prerequisites)
@@ -45,8 +39,8 @@ configured as an access point as follows:
   * Username: admin
   * Password: secret
 * DHCP range: 10.3.141.50 to 10.3.141.255
-* SSID: `raspi-webgui`
-* Password: ChangeMe
+* SSID: `RoBox`
+* Password: 20171009
 
 ## Manual installation
 These steps apply to the latest release of Raspbian (currently [Stretch](https://www.raspberrypi.org/downloads/raspbian/)). Notes for previously released versions are provided, where applicable. Start off by installing git, lighttpd, php7, hostapd and dnsmasq. 
