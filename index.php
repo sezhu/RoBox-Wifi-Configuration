@@ -64,7 +64,7 @@ $theme_url = 'dist/css/'.htmlspecialchars($theme, ENT_QUOTES);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo _("Raspbian WiFi Configuration Portal"); ?></title>
+    <title><?php echo _("RoBox WiFi Configuration Portal"); ?></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
