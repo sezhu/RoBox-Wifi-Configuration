@@ -1,11 +1,9 @@
 ![](http://i.imgur.com/xeKD93p.png)
-# `$ raspap-webgui` [![Release 1.4.0](https://img.shields.io/badge/Release-1.4.0-green.svg)](https://github.com/billz/raspap-webgui/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) 
+# `$ robox-wifi-configuration` [![Release 1.0](https://img.shields.io/badge/Release-1.4.0-green.svg)](https://github.com/billz/raspap-webgui/releases) [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi) 
 
-A simple, responsive web interface to control wifi, hostapd and related services on the Raspberry Pi.
+RoBox Wifi Configuration -- Forked from raspap-webgui
 
-This project was inspired by a [**blog post**](http://sirlagz.net/2013/02/06/script-web-configuration-page-for-raspberry-pi/) by SirLagz about using a web page rather than ssh to configure wifi and hostapd settings on the Raspberry Pi. I began by prettifying the UI by wrapping it in [**SB Admin 2**](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2), a Bootstrap based admin theme. Since then, the project has evolved to include greater control over many aspects of a networked RPi, better security, authentication, a Quick Installer, support for themes and more. RaspAP has been featured on sites such as [Instructables](http://www.instructables.com/id/Raspberry-Pi-As-Completely-Wireless-Router/), [Adafruit](https://blog.adafruit.com/2016/06/24/raspap-wifi-configuration-portal-piday-raspberrypi-raspberry_pi/), [Raspberry Pi Weekly](https://www.raspberrypi.org/weekly/commander/) and [Awesome Raspberry Pi](https://project-awesome.org/thibmaek/awesome-raspberry-pi) and implemented in countless projects.
-
-We'd be curious to hear about how you use this with your own RPi-powered projects. Until then, here are some screenshots:
+This project was forked from raspap-webgui. I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose, however, I need to customize the UI so that my users can easily understand the web page presented.
 
 ![](https://i.imgur.com/5E3SnEW.png)
 ![](https://i.imgur.com/jFDMEy6.png)
