@@ -26,7 +26,7 @@ sudo nano /var/www/html/index.php
 ```
 `<title><?php echo _("RoBox WiFi Configuration Portal"); ?></title>`
 `<a class="navbar-brand" href="index.php"><?php echo _("RoBox Wifi Portal"); ?></a>`
-`<img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoBox
+`<img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoBox`
 
 ## License
 See the [LICENSE](./LICENSE) file.
