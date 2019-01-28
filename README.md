@@ -6,13 +6,13 @@ This project was forked from raspap-webgui. I need a wifi configuration tool for
 ## Contents
 
  - [Installation](#installation)
- - [Modification](#modification)
+ - [Customization](#customization)
  - [License](#license)
 
 ## Installation
 Install raspap-webgui first (https://github.com/billz/raspap-webgui)
 
-## Modification
+## Customization
 1. Change SSID and password:
 ```sh
 sudo nano /etc/hostapd/hostapd.conf
@@ -20,14 +20,15 @@ sudo nano /etc/hostapd/hostapd.conf
 * SSID: `RoBoX`
 * Password: 20171009
 
-2. Change page title, header.
+2. Change page title, header, etc.
 ```sh
 sudo nano /var/www/html/index.php
 ```
 ```sh
-<title><?php echo _("RoBox WiFi Configuration Portal"); ?></title>
-<a class="navbar-brand" href="index.php"><?php echo _("RoBox Wifi Portal"); ?></a>
-<img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoBox```
+line 67:  <title><?php echo _("RoBox WiFi Configuration Portal"); ?></title>
+line 110: <a class="navbar-brand" href="index.php"><?php echo _("RoBox Wifi Portal"); ?></a>
+line 180: <img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoBox
+```
 
 ## License
 See the [LICENSE](./LICENSE) file.
