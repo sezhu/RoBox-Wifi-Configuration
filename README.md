@@ -1,8 +1,11 @@
 # `$ robox-wifi-configuration`
 RoBox Wifi Configuration -- Forked from raspap-webgui
 
-This project was forked from raspap-webgui. I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose. However, I need to customize the SSID and UI so that my users can easily understand the web page presented.
-I also fixed a few issues on RaspAP that caused problems on my Pi-3
+* This project was forked from raspap-webgui. 
+* I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose.
+* However, I need to customize the SSID and UI so that my users can easily understand the web page presented.
+* I also fixed a few issues on RaspAP that caused problems on my Pi-3.
+* Finally, I simplified the wifi configuration tool so that only client configuration is available in the menu.
 ## Contents
 
  - [Installation](#installation)
@@ -44,6 +47,18 @@ line 117:   $networks = $tmp_networks;
 line 118: //} else {
 line 119:   //$status->addMessage('Wifi settings updated but cannot restart (cannot execute "wpa_cli reconfigure")', 'danger');
 line 120: //}
+```
+
+4. Simplify the tool. Comment out line 118-121 and line 125-168:
+```sh
+line 118: /*<li>
+line 121: <?php if ( RASPI_WIFICLIENT_ENABLED ) : ?>*/
+line 125: /*<?php endif; ?>
+line 168: </li>*/
+```
+Add the following line before line 188: switch( $page ) {
+```sh
+$page = "wpa_conf";
 ```
 ## License
 See the [LICENSE](./LICENSE) file.
