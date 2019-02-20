@@ -35,8 +35,19 @@ line 180: <img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoB
 * Fix for a: Comment out line 134 & 136 in configure_client.php
 
 * Issue b. After entered pass-phrase, raspap-webgui wifi got lost.
-* Fix for b: Add the following line to configure_client.php
+* Fix for b: Add the following line to configure_client.php under line 117:
+```sh
+$status->addMessage('Restart hostapd');
+exec( 'sudo /etc/init.d/hostapd restart', $return );
+foreach( $return as $line ) {
+  $status->addMessage($line, 'info');
+}
+```
 
+```sh
+line 116:            $status->addMessage('Wifi settings updated successfully', 'success');
+line 117:            $networks = $tmp_networks;
+```
 ## License
 See the [LICENSE](./LICENSE) file.
 
