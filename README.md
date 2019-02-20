@@ -49,17 +49,21 @@ line 119:   //$status->addMessage('Wifi settings updated but cannot restart (can
 line 120: //}
 ```
 
-4. Simplify the tool. Comment out line 118-121 and line 125-168:
-```sh
-line 118: /*<li>
-line 121: <?php if ( RASPI_WIFICLIENT_ENABLED ) : ?>*/
-line 125: /*<?php endif; ?>
-line 168: </li>*/
-```
-Add the following line before line 188: switch( $page ) {
+4. Simplify the tool. Add the following line before line 188: switch( $page ) {
 ```sh
 $page = "wpa_conf";
 ```
+Delete line 118-121 and line 125-168:
+```sh
+line 118: <li>
+...
+line 121: <?php if ( RASPI_WIFICLIENT_ENABLED ) : ?>
+
+line 125: <?php endif; ?>
+...
+line 168: </li>
+```
+
 ## License
 See the [LICENSE](./LICENSE) file.
 
