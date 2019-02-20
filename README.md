@@ -53,15 +53,11 @@ line 120: //}
 ```sh
 $page = "wpa_conf";
 ```
-Delete line 118-121 and line 125-168:
+Delete line 102-172:
 ```sh
-line 118: <li>
+line 102: <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 ...
-line 121: <?php if ( RASPI_WIFICLIENT_ENABLED ) : ?>
-
-line 125: <?php endif; ?>
-...
-line 168: </li>
+line 172: </nav>
 ```
 
 ## License
