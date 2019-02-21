@@ -31,6 +31,7 @@ sudo nano /var/www/html/index.php
 line 67:  <title><?php echo _("RoBox WiFi Configuration Portal"); ?></title>
 line 110: <a class="navbar-brand" href="index.php"><?php echo _("RoBox Wifi Portal"); ?></a>
 line 180: <img class="logo" src="img/raspAP-logo.png" width="45" height="45">RoBox
+line 287: <div class="panel-footer"><?php echo _("<strong>Note:</strong> WEP aaccess points appear as 'Open'. RoBox does not currently support ...
 ```
 
 3. Issues and Fixes
@@ -49,7 +50,7 @@ line 119:   //$status->addMessage('Wifi settings updated but cannot restart (can
 line 120: //}
 ```
 
-4. Simplify the tool. Add the following line before line 188: switch( $page ) {
+4. Simplify the tool. Add the following line in index.php before line 188: switch( $page ) {
 ```sh
 $page = "wpa_conf";
 ```
