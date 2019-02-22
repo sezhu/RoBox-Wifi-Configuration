@@ -36,10 +36,10 @@ line 287: <div class="panel-footer"><?php echo _("<strong>Note:</strong> WEP aac
 
 3. Issues and Fixes
 * Issue a. Missing one SSID. See description in https://github.com/billz/raspap-webgui/issues/290
-* Fix for a: Comment out line 134 & 136 in configure_client.php
+* Fix: Comment out line 134 & 136 in configure_client.php
 
 * Issue b. After entered pass-phrase, raspap-webgui wifi got lost.
-* Fix for b: Comment out line 114, 115, 118, 119 & 120 in configure_client.php.
+* Fix: Comment out line 114, 115, 118, 119 & 120 in configure_client.php.
 ```sh
 line 114: //exec('sudo wpa_cli -i ' . RASPI_WIFI_CLIENT_INTERFACE . ' reconfigure', $reconfigure_out, $reconfigure_return );
 line 115: //if ($reconfigure_return == 0) {
@@ -50,11 +50,12 @@ line 119:   //$status->addMessage('Wifi settings updated but cannot restart (can
 line 120: //}
 ```
 
-4. Simplify the tool. Add the following line in index.php before line 188: switch( $page ) {
+4. Simplify the tool.
+* Add the following line in index.php before line 188: switch( $page ) {
 ```sh
 $page = "wpa_conf";
 ```
-Delete line 102-172:
+* Delete line 102-172:
 ```sh
 line 102: <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 ...
