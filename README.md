@@ -4,8 +4,9 @@ RoBox Wifi Configuration -- Forked from raspap-webgui
 * This project was forked from raspap-webgui. 
 * I need a wifi configuration tool for my own product -- RoBox, raspap-webgui would be perfect to fulfill the purpose.
 * However, I need to customize the SSID and UI so that my users can easily understand the web page presented.
-* I also fixed a few issues on RaspAP that caused problems on my Pi-3.
-* Finally, I simplified the wifi configuration tool so that only client configuration is available in the menu.
+* I fixed a few issues on RaspAP that caused problems on my Pi-3.
+* I simplified the wifi configuration tool so that only client configuration is available in the menu.
+* Finally, I made changes to Connect button, so that it becomes a link and points to a new page rff which concludes the configuration.
 ## Contents
 
  - [Installation](#installation)
@@ -61,7 +62,20 @@ line 102: <nav class="navbar navbar-default navbar-static-top" role="navigation"
 ...
 line 172: </nav>
 ```
-
+5. Changes to Connect button
+* Make the following change in configure_client.php:
+```sh
+line 271: <a class="col-xs-4 col-md-4 btn btn-info" href="index.php?page=rff&connect=<?php echo htmlentities($ssid, ENT_QUOTES)?>"><?php echo _("Connect"); ?></a>
+```
+* Add a new file rff.php to includes folder (Refer to the sourse code in this repository).
+* Add the following line to index.php
+```
+line 37: include_once( 'includes/rff.php' );
+line 118: if ($page != "rff")
+line 157: case "rff":
+line 158:   DisplayRff();
+line 159:   break;
+```
 ## License
 See the [LICENSE](./LICENSE) file.
 
